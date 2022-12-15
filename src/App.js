@@ -1,11 +1,11 @@
 import { useReducer, useEffect, useState, Fragment } from 'react';
-
-import './App.css';
-import Data from './Data';
-import Reducer from './Reducers/Trafficlight';
+import React from 'react';
+import './style.css';
+import Data from './data';
+import Traffic from './Components/Traffic';
 
 function App() {
-  const [trafficlights, dispatch] = useReducer(Reducer, Data);
+  const [trafficlights, dispatch] = useReducer(Traffic, Data);
 
   const lightDurations = [3000, 2000, 1000];
 

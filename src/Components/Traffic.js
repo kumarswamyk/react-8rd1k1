@@ -1,3 +1,4 @@
+import React from 'react';
 const Traffic = (state, action) => {
   if ('trafficlightId' in action) {
     return state.map((trafficlight) => {
